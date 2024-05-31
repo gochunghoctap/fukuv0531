@@ -3,7 +3,7 @@ namespace fukuv0531
     public partial class Form1 : Form
     {
         int vy = 15;
- 
+
         public Form1()
         {
             InitializeComponent();
@@ -28,6 +28,18 @@ namespace fukuv0531
         {
             timer1.Enabled = false;
             label1.Text = "ファン　クォック　フン";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            float fw = 3.14f;
+            string str = $"{fw}";
+            int a = (int)fw;
+
+            str = "3";
+            a = int.Parse(str);
+            fw = a;
+            fw = float.Parse(str);
         }
     }
 }
